@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Swap Image Example</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('images/TF2_wallpaper.png');
+            background-size: cover;
+            /*background-position: center;*/
+            background-repeat: no-repeat;
+            /*background-attachment: fixed;*/
+        }
+    </style>
+    <!-- Define the audio file -->
+    <audio id="evil-laff" src="images/evil-laff.mp3"></audio>
+
+    <!-- Required for Bootstrap responsiveness
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+-->
+    <!-- Bootstrap first
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+-->
+
+</head>
+<body>
+
+    <iframe src="menu.html" style="width:100%; height:54px; border:none; display:block; overflow:hidden; position:sticky; top:0; z-index:1000"></iframe> 
+
+    <h1>My Homepage</h1>
+
+    <img id="me-pic"
+        src="images/me-pic.jpg"
+        onclick="document.getElementById('evil-laff').play(); SwapImage()">
+
+    <br><br>
+
+    <button id="like-button" onclick="ClickLike()"><img src="images/like-thumb.jpg"></button>
+
+    <br><br>
+
+    <textarea id="text-block">Welcome to my little corner of the Web!</textarea>
+
+    <br><br>
+    
+    <button id="like-count" onclick="increaseCount()">
+        123 Likes!
+    </button>
+    
+    <br><br><br>
+    <p>website by: JR</p>
+
+
+
+</body>
+</html>
